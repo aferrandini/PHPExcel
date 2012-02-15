@@ -16,9 +16,8 @@ Add to your `/deps` file :
 
 ```
 [PHPExcel]
-    git=http://github.com/logiQ/PHPExcel.git
+    git=https://github.com/aferrandini/PHPExcel.git
     target=/phpexcel
-    version=v1.7.6
 ```
 
 Now, run the vendors script to download the files to your vendor directory:
@@ -36,7 +35,7 @@ Add the 'PHPExcel' prefix to your autoloader:
 // app/autoload.php
 $loader->registerPrefixes(array(
     // ...
-    'PHPExcel'         => __DIR__.'/../vendor/phpexcel/Classes/'
+    'PHPExcel'         => __DIR__.'/../vendor/phpexcel/Classes/',
 ));
 ```
 
